@@ -100,27 +100,7 @@ module.exports = {
 	},
 };
 
-if(DJSVersion === '^12.5.3') {
-	module.exports = {
-		Sudo: require('./src/v12/Sudo'),
-		Snake : require('./src/v12/Snake'),
-		Fight : require('./src/v12/Fight'),
-		Trivia : require('./src/v12/Trivia'),
-		FastType : require('./src/v12/FastType'),
-		QuickClick : require('./src/v12/QuickClick'),
-		ChaosWords : require('./src/v12/ChaosWords'),
-		LieSwatter : require('./src/v12/LieSwatter'),
-		Calculator : require('./src/v12/Calculator'),
-		ShuffleGuess : require('./src/v12/ShuffleGuess'),
-		GuessTheNumber : require('./src/v12/GuessTheNumber'),
-		NeverHaveIEver : require('./src/v12/NeverHaveIEver'),
-		WouldYouRather : require('./src/v12/WouldYouRather'),
-		GuessThePokemon : require('./src/v12/GuessThePokemon'),
-		RockPaperScissors : require('./src/v12/RockPaperScissors'),
-		WillYouPressTheButton : require('./src/v12/WillYouPressTheButton'),
-	};
-} else {
-	module.exports = {
+module.exports = {
 		Sudo: require('./src/v13/Sudo'),
 		Snake : require('./src/v13/Snake'),
 		Fight : require('./src/v13/Fight'),
@@ -139,4 +119,3 @@ if(DJSVersion === '^12.5.3') {
 		RockPaperScissors : require('./src/v13/RockPaperScissors'),
 		WillYouPressTheButton : require('./src/v13/WillYouPressTheButton'),
 	};
-}
